@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>Dotnet.ico</ApplicationIcon>
+    <Version>1.0.3</Version>
+    <Company>Phoenix Corp - [ MohammadReza Gholamizadeh ]</Company>
+    <Copyright>Phoenix Corp - [ MohammadReza Gholamizadeh ]</Copyright>
+    <PackageProjectUrl>https://github.com/MohammadRezaGholamizadeh/DotnetReportsEngine.Core</PackageProjectUrl>
+    <PackageIcon>Dotnet.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>DotNet.Report.Engine</PackageTags>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <PackageLicenseFile>D:\All Projects\DotnetReportsEngine.Core\LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DotnetReportEngine.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Dotnet.ico" />
+    <EmbeddedResource Include="DotnetReportEngine.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </EmbeddedResource>
+    <None Include="C:\Users\Phoenix\Downloads\Dotnet.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
